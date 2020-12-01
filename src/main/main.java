@@ -29,10 +29,10 @@ public class main {
 		Scanner ler = new Scanner(System.in);
 		String[][] lido = LerArquivos();
 		
-		int[] result = new int[lido.length]; 
+		long[] result = new long[lido.length]; 
 		
 		for(int i=0; i<lido.length; i++) {
-				result[i] = Integer.parseInt(lido[i][tipo]);			
+				result[i] = Long.parseLong(lido[i][tipo]);			
 				//System.out.print(Integer.parseInt(lido[i][2]) + " ");
 		}
 		
@@ -40,7 +40,7 @@ public class main {
 		
 		System.out.print("Lista: ");
 		
-		for(int i:result) {
+		for(long i:result) {
 			System.out.print(i+" ");
 			
 		}
@@ -49,7 +49,7 @@ public class main {
 		HeapSort.ordem(result);
 		
 		System.out.print("Lista ordenada: ");
-		for(int i:result) {
+		for(long i:result) {
 			System.out.print(i+" ");
 		}
 		
@@ -62,7 +62,7 @@ public class main {
 			System.out.print("\n\n\n");
 			for(int i=0; i<lido.length; i++) {
 				for(int k=0; k<result.length; k++) {
-					if(Integer.parseInt(lido[k][tipo]) == result[i]) {
+					if(Long.parseLong(lido[k][tipo]) == result[i]) {
 						System.out.println(lido[k][5] + " " + lido[k][4] + " " + lido[k][3] + " " + lido[k][2] + " " + lido[k][1]);
 					}
 				}
