@@ -47,11 +47,15 @@ public class HeapSort {
 		//Compara os filhos e ordena, se filho 1(j) < filho 2(k) filho 1
 		//filho 2 passa a ser filho 1.
 		
-		if(j<tam && k<tam) {
-				
-			if(c[j]<c[k]) {
-				j=k;
-			}
+		if(j<tam) {
+			
+				if(k<tam) {
+				System.out.println("k"+c[k]);
+				System.out.println("j"+c[j]);
+					if(c[j]<c[k]) {
+						j=k;
+					}
+				}	
 			
 			//Verifica se filho 1 eh maior que a raiz,
 			//se for filho 1 vira raiz e raiz vira filho 1,
@@ -81,4 +85,5 @@ public class HeapSort {
 			}
 		}
 	}
+	
 }
