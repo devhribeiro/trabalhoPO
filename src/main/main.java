@@ -12,6 +12,7 @@ public class main {
 		int tipo = 0;
 		Scanner ler = new Scanner(System.in);
 		
+		//teste de alteração
 		System.out.print("Algoritimos\nHeapSort - 1\n\n");
 		
 		System.out.print("Qual Algoritimo deseja executar: ");
