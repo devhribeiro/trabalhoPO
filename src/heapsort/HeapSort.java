@@ -50,8 +50,7 @@ public class HeapSort {
 		if(j<tam) {
 			
 				if(k<tam) {
-				System.out.println("k"+c[k]);
-				System.out.println("j"+c[j]);
+				
 					if(c[j]<c[k]) {
 						j=k;
 					}
