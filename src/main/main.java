@@ -318,7 +318,7 @@ public class main {
 				output.write(c[i] + ";" + n[i] + ";" + ag[i] + ";" + co[i] + ";" + s[i] + "\n");
 			}
 			// Flushes data to the destination
-			System.out.println("Data is send to file.");
+			System.out.println("Data is send to file in /result.");
 
 			// Closes the writer
 			output.close();
