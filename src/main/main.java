@@ -38,28 +38,90 @@ public class main {
 					"6 - 500 registros ordenados \n7 - 1000 registros ordenados\n8 - 5000 registros ordenados\n9 - 10000 registros ordenados\n10 - 50000 registros ordenados\n");
 			System.out.print(
 					"11 - 500 registros invertidos \n12 - 1000 registros invertidos\n13 - 5000 registros invertidos\n14 - 10000 registros invertidos\n15 - 50000 registros invertidos\n");
+			System.out.print("16 - Sair\n");
 			System.out.print("Digite a opcao :");
 	
 			
 		     tipo = ler.nextInt();
+		     String entrada, saida;
 		     switch(tipo){
 		         case 1:
-		        	 String entrada = "arqvs/conta500alea.txt";
-		        	 String  saida = "result/QuickAlea500.txt";
+		        	 entrada = "arqvs/conta500alea.txt";
+		        	 saida = "result/QuickAlea500.txt";
 		        	 QuickSort(entrada,saida);
 		             break;                     
-		         case 2:		 		             
+		         case 2:
+		        	 entrada = "arqvs/conta1000alea.txt";
+		        	 saida = "result/QuickAlea1000.txt";
+		        	 QuickSort(entrada,saida);
 			         break;
 		         case 3:
+		        	 entrada = "arqvs/conta5000alea.txt";
+		        	 saida = "result/QuickAlea5000.txt";
+		        	 QuickSort(entrada,saida);
 		              break;
 		         case 4:
+		        	 entrada = "arqvs/conta10000alea.txt";
+		        	 saida = "result/QuickAlea10000.txt";
+		        	 QuickSort(entrada,saida);
 		        	 break;
 		         case 5:
+		        	 entrada = "arqvs/conta50000alea.txt";
+		        	 saida = "result/QuickAlea50000.txt";
+		        	 QuickSort(entrada,saida);
 		        	 break;
 		         case 6:
-		             break;
+		        	 entrada = "arqvs/conta500ord.txt";
+		        	 saida = "result/QuickOrd500.txt";
+		        	 QuickSort(entrada,saida);
+		             break;                     
+		         case 7:
+		        	 entrada = "arqvs/conta1000ord.txt";
+		        	 saida = "result/QuickOrd1000.txt";
+		        	 QuickSort(entrada,saida);
+			         break;
+		         case 8:
+		        	 entrada = "arqvs/conta5000ord.txt";
+		        	 saida = "result/QuickOrd5000.txt";
+		        	 QuickSort(entrada,saida);
+		              break;
+		         case 9:
+		        	 entrada = "arqvs/conta10000ord.txt";
+		        	 saida = "result/QuickOrd10000.txt";
+		        	 QuickSort(entrada,saida);
+		        	 break;
+		         case 10:
+		        	 entrada = "arqvs/conta50000ord.txt";
+		        	 saida = "result/QuickOrd50000.txt";
+		        	 QuickSort(entrada,saida);
+		        	 break;
+		         case 11:
+		        	 entrada = "arqvs/conta500inv.txt";
+		        	 saida = "result/QuickInv500.txt";
+		        	 QuickSort(entrada,saida);
+		             break;                     
+		         case 12:
+		        	 entrada = "arqvs/conta1000inv.txt";
+		        	 saida = "result/QuickInv1000.txt";
+		        	 QuickSort(entrada,saida);
+			         break;
+		         case 13:
+		        	 entrada = "arqvs/conta5000inv.txt";
+		        	 saida = "result/QuickInv5000.txt";
+		        	 QuickSort(entrada,saida);
+		              break;
+		         case 14:
+		        	 entrada = "arqvs/conta10000inv.txt";
+		        	 saida = "result/QuickInv10000.txt";
+		        	 QuickSort(entrada,saida);
+		        	 break;
+		         case 15:
+		        	 entrada = "arqvs/conta50000inv.txt";
+		        	 saida = "result/QuickInv50000.txt";
+		        	 QuickSort(entrada,saida);
+		        	 break;
 		     }
-		 }while(tipo!=6);
+		 }while(tipo!=16);
 
 		}
 	
